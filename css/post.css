@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  padding: 1px;
+  margin: 0;
+  font-family: "Pangolin", cursive;
+  font-size: 13.5pt;
+}
+
+h1 u {
+  font-size: 20pt;
+}
+
+h2 {
+  font-size: 17pt;
+}
+
+h2 u {
+  font-size: 17pt;
+}
+
+.navbar {
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 19pt;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list .list-item {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: orangered;
+}
+
+#content-0 {
+  width: 100%;
+  height: auto;
+}
+
+#content-1 {
+  width: 100%;
+  height: auto;
+}
+
+#content-2 {
+  width: 100%;
+  height: auto;
+}
+
+#content-3 {
+  width: 100%;
+  height: auto;
+}
+
+.konohamaru {
+  height: 150px;
+  width: 250px;
+  margin-bottom: 5px;
+  border: 1.5px black solid;
+}
+
+.leaf-village {
+  height: 150px;
+  width: 250px;
+  margin-bottom: 5px;
+  border: 1.5px black solid;
+}
+
+.cloud-village {
+  height: 150px;
+  width: 250px;
+  margin-bottom: 5px;
+  border: 1.5px black solid;
+}
+
+.sand-village {
+  height: 150px;
+  width: 250px;
+  margin-bottom: 5px;
+  border: 1.5px black solid;
+}
+
+.grid {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-areas:
+    "c0"
+    "c1"
+    "c2"
+    "c3";
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.content0 {
+  grid-area: c0;
+}
+
+.content1 {
+  grid-area: c1;
+}
+
+.content2 {
+  grid-area: c2;
+}
+
+.content3 {
+  grid-area: c3;
+}
+
+.flex-foot {
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+@media (min-width: 300px) and (max-width: 900px) {
+  .grid {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}

@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", cursive;
+}
+.navbar {
+  background-color: red;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 19pt;
+}
+
+.nav-list {
+  list-style-type: none;
+}
+
+.nav-list .list-item {
+  display: inline-block;
+  padding: 10px 10px;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: orangered;
+}
+
+.naruto-symbol {
+  height: 40px;
+}
+
+.head-container {
+  padding: 20px;
+}
+
+.naruto-map {
+  width: 400px;
+  border-radius: 10px;
+}
+
+.naruto-flex {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.container-1 {
+  border: 1px black solid;
+  border-radius: 10px;
+  padding: 0px;
+  width: 400px;
+  box-shadow: 1px 1px black;
+  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 300px, 1fr, auto;
+  grid-template-areas:
+    "nh nh"
+    ". ."
+    "nm nm "
+    "nd nd"
+    "nb nb";
+}
+
+.naruto-map {
+  grid-area: nm;
+}
+
+.naruto-header {
+  grid-area: nh;
+}
+
+.naruto-des {
+  grid-area: nd;
+}
+
+.naruto-button {
+  grid-area: nb;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.flex-foot {
+  padding: 20px;
+  display: flex;
+  justify-content: end;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orangered;
+}
+
+@media all and (max-width: 600px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+}
